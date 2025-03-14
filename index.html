@@ -1,0 +1,106 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ProEgo's Site</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img src="Raccoon2.png" alt="Raccoon" class="Raccoon" id="Raccoon1">
+        <div id="Content">
+            <div>
+                <h1 id="Title"> Welcome to ProEgol's page</h1>
+                <p>Fun buttons:</p>
+                <button onclick="transform()">Try me</button>
+                <script>
+                    function transform() {
+                        const images = document.querySelectorAll('.Raccoon');
+                        images.forEach(image => {
+                            image.classList.toggle('flip');
+                        });
+                    }
+                </script>
+                <p>Change background color:</p>
+                <input type="text" id="bcolorinput" placeholder="Type in a color">
+                <button onclick="bcolorchange()">Change</button>
+                <script>
+                    function bcolorchange() {
+                        const color = document.getElementById("bcolorinput").value;
+                        document.body.style.backgroundColor = color;
+                    }
+                </script>
+            </div>
+            <div>
+                <h2 id="Personal"> Personal Information</h2>
+                <p> Hello! My name is Eduardo Saavedra, also known online as ProEgol.
+                    I'm from Chile and currently 21 years old, my interests and hobbys consist of:</p>
+                <ul>
+                    <li>Drawing</li>
+                    <li>Music</li>
+                    <li>Computers</li>
+                </ul>
+            </div>
+            <div>
+                <h2> Academic Information</h2>
+                <ul id="ul2">
+                    <li>Studying Computer Science at Universidad de Los Andes (Enrolled 2022)</li>
+                    <li>Taken Electrical Engineering technological concentration</li>
+                    <li>PENTA Student from 2016 to 2021, taken various programming courses</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="Cursive">Skills</h2>
+                <table>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td class="Advanced">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Javascrpit</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>C/C++</td>
+                        <td class="Advanced">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td class="Advanced">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td class="Advanced">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Spanish</td>
+                        <td>Native</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h2>Summary</h2>
+                <div id="summary">
+                    <p>I have always had an interest in technology and computers, leading me to take courses since before university. These further helped me realize that studying computer science was the best option for me, and now 4 years into my career I count with useful knowledge on new tools, and programming languages, making use of my previous experience. Having already completed my pre-professional practice, I have already been introduced to a working environment, experienced with computerized tomographies. I expect in the upcoming years to complete my formation as a proper engineer.</p>
+                </div>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <p><a href="https://github.com/ProEgol2"> GitHub Profile</a></p>
+                <p><a href="https://www.youtube.com/watch?v=NfPcqqoUqqo"> Cool Video</a></p>
+            </div>
+        </div>
+        <img src="Raccoon2.png" alt="Raccoon" class="Raccoon flip" id="Raccoon2">
+    </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.Raccoon {
+    width: 156;
+    height: 218;
+}
+#Raccoon1 {
+    display: flex;
+}
+#Raccoon2 {
+    display: flex;
+}
+#Content {
+    text-align: center;
+    flex-grow: -1;
+}
+li {
+    margin-bottom: 10px;
+}
+.b2 {
+    font-family:'Courier New', Courier, monospace;
+}
+.Cursive {
+    font-style: italic;
+}
+table {
+    display: flex;
+    justify-content: center;
+    border-spacing: 15px;
+}
+th {
+    border-bottom: 1px solid black;
+}
+table {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#summary {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#title {
+    border-bottom: 1px solid black;
+}
+#Personal {
+    border-top: 1px solid black;
+}
+.flip {
+    transform: scaleX(-1);
+}
+.Advanced {
+    color:green
+}
